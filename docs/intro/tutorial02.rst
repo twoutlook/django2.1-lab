@@ -19,6 +19,8 @@ Lab::
 
 .. note::
     For beginner or rapid local development, use default database.
+    
+    You should see AUTHENTICATION AND AUTHORIZATION and your newly created user.
 
 .. warning::
     Consider python manage.py shell as another topic. 
@@ -55,16 +57,15 @@ Lab::
 
 
 .. note::
-    Always consider to maintian Model and Admin together.
-
+     You should see POLLS and Questions and Choices
    
-2-2. Add App to Settings 
+2-3. Add App to Settings 
 ==================
 
 Lab::
 
     *** edit mysite/settings.py
-
+    source go
 
 
 .. code-block:: python
@@ -74,8 +75,16 @@ Lab::
       'polls',
       'django.contrib.admin',
       ...
+      
+.. code-block:: python
+    :caption: mysite/go.py
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
+ 
+      
 
-2-2. Edit Admin
+2-4. Maintain Poll's Admin
 ==================
 
 Lab::
