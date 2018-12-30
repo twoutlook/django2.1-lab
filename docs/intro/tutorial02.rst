@@ -72,8 +72,8 @@ Lab::
    
    INSTALLED_APPS = [
       'polls',
-   'django.contrib.admin',
-    ...
+      'django.contrib.admin',
+      ...
     
 * go.py::
 
