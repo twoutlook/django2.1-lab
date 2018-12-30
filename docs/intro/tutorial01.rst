@@ -49,7 +49,7 @@ Lab::
 
 Lab::
 
-    $ python manage.py startapp polls . 
+    $ python manage.py startapp polls
     *** edit mysite/urls.py    
     *** new polls/urls.py
     *** add def index to polls/views.py
