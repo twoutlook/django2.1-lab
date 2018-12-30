@@ -88,10 +88,17 @@ Lab::
     
 
 .. note::
-    To ensure App is working.
+    To ensure polls is working.
+
+.. figure:: _static/img1-3_01.png
+    :align: center
+
 
 .. warning::
     Be aware 127.0.0.1:8000 is damaged!
+    
+.. figure:: _static/img1-3_02.png
+    :align: center
 
 
 
