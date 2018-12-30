@@ -78,4 +78,27 @@ Lab::
       'django.contrib.admin',
       ...
 
+2-2. Edit Admin
+==================
+
+Lab::
+
+    *** edit poll/admin.py
+    (venv)$ . go
+
+
+.. code-block:: python
+    :caption: polls/admin.py
+    
+  from django.contrib import admin
+
+  from .models import Question,Choice
+
+  admin.site.register(Question)
+  admin.site.register(Choice)
+
+.. warning::
+    Be aware there's different approach, not exactly as official tutorial.
+
+
 
