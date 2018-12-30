@@ -49,6 +49,7 @@ Lab::
 ==================
 
 Lab::
+
     $ python3.6 -v venv venv 
     $ source venv/bin/activate 
     (venv)$ pip install django  
@@ -65,6 +66,7 @@ Lab::
 ==================
 
 Lab::
+
     (venv)$ django-admin startproject mysite
     (venv)$ cd mysite
     (venv)$ python manage.py runserver
@@ -78,6 +80,7 @@ Lab::
 ==================
 
 Lab::
+
     $ python manage.py startapp polls . 
     *** edit mysite/urls.py
         add path('polls/', include('polls.urls')), above or below path('admin/', admin.site.urls),
