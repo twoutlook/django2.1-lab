@@ -70,9 +70,9 @@ Lab::
 * mysite/settings.py::
 
    INSTALLED_APPS = [
-      'polls',
-      'django.contrib.admin',
-      ...
+   'polls',
+   'django.contrib.admin',
+    ...
     
 * go.py::
 
