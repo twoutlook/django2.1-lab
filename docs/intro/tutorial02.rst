@@ -7,7 +7,7 @@ Writing your first Django app, part 2
   https://docs.djangoproject.com/en/2.1/intro/tutorial02/
     
   
-2-1. Use Django Admin
+2-1. Make Django Admin Available
 ==================
 
 Lab::
@@ -63,11 +63,8 @@ Lab::
 
 Lab::
 
-    *** edit poll/models.py
-    (venv)$ python manage.py makemigrations
-    (venv)$ python manage.py migrate
-    (venv)$ python manage.py runserver
-    *** Use browser to visit 127.0.0.1:8000/admin
+    *** edit mysite/settings.py
+
 
 
 .. code-block:: python
