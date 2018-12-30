@@ -44,27 +44,41 @@ Lab::
 Lab::
 
     $ python manage.py startapp polls . 
-    *** edit mysite/urls.py
-        add path('polls/', include('polls.urls')), above or below path('admin/', admin.site.urls),
-        add include to the line from django.urls import path
-    
+    *** edit mysite/urls.py    
     *** new polls/urls.py
-        from django.urls import path
-        from . import views
-
-        urlpatterns = [
-            path('', views.index, name='index'),
-        ]
-    
     *** add def index to polls/views.py
-        from django.http import HttpResponse    
-        def index(request):
-            return HttpResponse("Hello, world. You're at the polls index.")
-
-    
     (venv)$ python manage.py runserver
     *** browser, visit 127.0.0.1:8000/polls
     
+    
+* mysite/urls.py::
+    
+    
+    from django.contrib import admin
+    from django.urls import path,include
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        path('polls/', include('polls.urls')),
+    ]
+
+* polls/urls.py::
+    
+    
+    from django.urls import path
+    from . import views
+
+    urlpatterns = [
+      path('', views.index, name='index'),
+    ]
+
+* polls/views.py::
+    
+
+    from django.http import HttpResponse    
+    def index(request):
+        return HttpResponse("Hello, world. You're at the polls index.")
+
     
 
 .. note::
