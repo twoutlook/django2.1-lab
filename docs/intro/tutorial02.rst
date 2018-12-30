@@ -5,7 +5,7 @@ Writing your first Django app, part 2
 * Django Getting started, `part 2 <https://docs.djangoproject.com/en/2.1/intro/tutorial02/>`_
 * Read The Docs, `part 2 <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html>`_
   
-2-1. Make Django Admin Available
+2-1. Admin
 ==================
 
 Lab::
@@ -25,7 +25,7 @@ Lab::
 
  
     
-2-2. Create Models 
+2-2. Model 
 ==================
 
 Lab::
@@ -76,7 +76,7 @@ Lab::
    python manage.py migrate
    python manage.py runserver
  
-2-4. Maintain Poll's Admin
+2-4. Admin App
 ==================
 
 
