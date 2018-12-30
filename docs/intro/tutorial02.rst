@@ -6,18 +6,6 @@ Writing your first Django app, part 2
 
  This page on `Read The Docs <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html/>`_
 
-
-
-.. _a link: https://docs.djangoproject.com/en/2.1/intro/tutorial02/
-
-References , `here`_.
-
-.. _here: https://docs.djangoproject.com/en/2.1/intro/tutorial02/
-
-On Read The Docs, `here`_.
-
-.. _here: https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html
-  
   
   
 2-1. Make Django Admin Available
