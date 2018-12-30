@@ -34,7 +34,7 @@ Lab::
 
 
 .. note::
-    You should see a rocket on the page.
+    To see a rocket!
 
 .. figure:: _static/img01-01.png
     :align: center
