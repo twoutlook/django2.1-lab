@@ -7,7 +7,7 @@ Writing your first Django app, part 1
   https://docs.djangoproject.com/en/2.1/intro/tutorial01/
     
   
-1. Prepare Lab Virtual Envrionment
+1-1. Prepare Lab Virtual Envrionment
 ==================
 
 Lab::
@@ -24,7 +24,7 @@ Lab::
     
  
     
-2. Start Project and Run Development Server
+1-2. Start Project and Run Development Server
 ==================
 
 Lab::
@@ -38,7 +38,7 @@ Lab::
     You should see a rocket on the page.
 
     
-3. Start App and Maintain View and URLs
+1-3. Start App and Maintain View and URLs
 ==================
 
 Lab::
