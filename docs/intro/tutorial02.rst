@@ -38,7 +38,7 @@ Lab::
     (venv)$ python manage.py runserver
     *** Use browser to visit 127.0.0.1:8000/admin
 
-
+* polls/models.py
 .. code-block:: python
     :caption: polls/models.py
 
@@ -68,7 +68,7 @@ Lab::
     *** edit go.py
 
 
-
+* mysite/settings.py
 .. code-block:: python
     :caption: mysite/settings.py
 
@@ -76,7 +76,8 @@ Lab::
       'polls',
       'django.contrib.admin',
       ...
-      
+    
+* go.py   
 .. code-block:: python
     :caption: mysite/go.py
     python manage.py makemigrations
@@ -99,7 +100,7 @@ Lab::
     *** edit poll/admin.py
 
 
-
+* polls/admin.py
 .. code-block:: python
     :caption: polls/admin.py
     
