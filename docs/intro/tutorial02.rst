@@ -38,9 +38,8 @@ Lab::
     (venv)$ python manage.py runserver
     *** Use browser to visit 127.0.0.1:8000/admin
 
-* polls/models.py
-.. code-block:: python
-    :caption: polls/models.py
+* polls/models.py::
+
 
     from django.db import models
 
