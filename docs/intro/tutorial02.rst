@@ -87,12 +87,16 @@ Lab::
 
 Lab::
 
-    *** edit mysite/settings.py
-    *** edit go.py
+    *** edit poll/admin.py 
+    *** 
 
 
-* mysite/settings.py::
+* polls/admin.py::
 
+    from django.contrib import admin
+    from .models import Question,Choice
+    admin.site.register(Question)
+    admin.site.register(Choice)
    
    INSTALLED_APPS = [
       'polls',
