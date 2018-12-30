@@ -12,6 +12,7 @@ Writing your first Django app, part 1
 套路練習
 ==================
 
+Lab::
 
     $ python3.6 -v venv venv
     $ . venv/bin/activate
