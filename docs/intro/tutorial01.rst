@@ -49,15 +49,31 @@ Lab::
 ==================
 
     $ python3.6 -v venv venv
+    
     $ . venv/bin/activate
+    
     (venv)$ pip install django
     
 
 .. note::
-    macOS 10.14.2 with Python3.6
+    macOS 10.14.2
+    
+    Python3.6
  
     
+2. Start Project and Run Development Server
+==================
+    (venv)$ django-admin startproject mysite
+    
+    (venv)$ cd mysite
+    
+    (venv)$ python manage.py runserver
+    
+    *** Use browser to visit 127.0.0.1:8000
+    
 
+.. note::
+    You should see a rocket on the page.
 
 
 
