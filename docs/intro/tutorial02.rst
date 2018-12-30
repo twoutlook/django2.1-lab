@@ -8,9 +8,9 @@ This is a paragraph that contains `a link`_.
 
 References , `here`_.
 
-.. _here:  https://docs.djangoproject.com/en/2.1/intro/tutorial02/
+.. _here: https://docs.djangoproject.com/en/2.1/intro/tutorial02/
 
-On Read The Docs, `here`_
+On Read The Docs, `here`_.
 
 .. _here: https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html
   
