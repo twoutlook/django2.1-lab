@@ -2,9 +2,8 @@
 Writing your first Django app, part 1
 =====================================
 
- Django Getting started, `part 1 <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_
-
- Read The Docs, `part 1 <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial01.html>`_
+* Django Getting started, `part 1 <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_
+* Read The Docs, `part 1 <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial01.html>`_
  
   
 1-1. Prepare Lab Virtual Envrionment
