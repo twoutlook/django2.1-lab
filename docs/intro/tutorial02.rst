@@ -67,30 +67,19 @@ Lab::
     *** edit go.py
 
 
-* mysite/settings.py
-.. code-block:: python
-    :caption: mysite/settings.py
+* mysite/settings.py::
 
-    INSTALLED_APPS = [
+  INSTALLED_APPS = [
       'polls',
       'django.contrib.admin',
       ...
     
-* go.py   
-.. code-block:: python
-    :caption: mysite/go.py
-    python manage.py makemigrations
-    python manage.py migrate
-    python manage.py runserver
- 
- 
- go.py::
+* go.py::
 
     python manage.py makemigrations
     python manage.py migrate
     python manage.py runserver
  
-
 2-4. Maintain Poll's Admin
 ==================
 
@@ -99,10 +88,8 @@ Lab::
     *** edit poll/admin.py
 
 
-* polls/admin.py
-.. code-block:: python
-    :caption: polls/admin.py
-    
+* polls/admin.py::
+
   from django.contrib import admin
 
   from .models import Question,Choice
