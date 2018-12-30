@@ -59,13 +59,14 @@ Lab::
 .. note::
      You should see POLLS and Questions and Choices
    
-2-3. Add App to Settings 
+2-3. Add App to Settings and Make Script
 ==================
 
 Lab::
 
     *** edit mysite/settings.py
-    source go
+    *** edit go.py
+
 
 
 .. code-block:: python
@@ -82,7 +83,13 @@ Lab::
     python manage.py migrate
     python manage.py runserver
  
-      
+ 
+ go.py::
+
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
+ 
 
 2-4. Maintain Poll's Admin
 ==================
@@ -90,7 +97,7 @@ Lab::
 Lab::
 
     *** edit poll/admin.py
-    (venv)$ . go
+
 
 
 .. code-block:: python
@@ -107,4 +114,13 @@ Lab::
     Be aware there's different approach, not exactly as official tutorial.
 
 
+2-5. Go
+==================
+
+Lab::
+
+    (venv)$ . go
+
+.. note::
+    From right now, whenever you maintain model, Ctrl+C to stop server and source go to run again with database ready.
 
