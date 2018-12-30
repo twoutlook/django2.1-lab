@@ -4,7 +4,7 @@ Writing your first Django app, part 2
 
  Django Getting started, `part 2 <https://docs.djangoproject.com/en/2.1/intro/tutorial02/>`_
 
- Read The Docs, `part 2<https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html/>`_
+ Read The Docs, `part 2 <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html/>`_
   
 2-1. Make Django Admin Available
 ==================
