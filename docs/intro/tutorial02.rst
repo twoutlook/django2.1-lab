@@ -86,11 +86,12 @@ Lab::
 
 Lab::
 
-    *** edit poll/admin.py
+    *** edit poll/admin.py 
+    
 
-
-
+* go.py::
 * polls/admin.py::
+
 
   from django.contrib import admin
   from .models import Question,Choice
