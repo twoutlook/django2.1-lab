@@ -34,10 +34,16 @@ Lab::
     (venv)$ python manage.py runserver
     *** Use browser to visit 127.0.0.1:8000
 
+
+
 .. note::
     You should see a rocket on the page.
 
-    
+.. figure:: _static/img01-01.png
+    :align: center
+
+
+
 1-3. Start App and Maintain View and URLs
 ==================
 
