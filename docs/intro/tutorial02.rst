@@ -2,7 +2,11 @@
 Writing your first Django app, part 2
 =====================================
 
-This is a paragraph that contains `a link`_.
+ Django `Getting started <https://docs.djangoproject.com/en/2.1/intro/tutorial02/>`_
+
+ This page on `Read The Docs <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html/>`_
+
+
 
 .. _a link: https://docs.djangoproject.com/en/2.1/intro/tutorial02/
 
