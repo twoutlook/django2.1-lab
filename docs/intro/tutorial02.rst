@@ -2,6 +2,9 @@
 Writing your first Django app, part 2
 =====================================
 
+on Read The Docs,
+https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html
+
 .. admonition:: References:
 
   https://docs.djangoproject.com/en/2.1/intro/tutorial02/
