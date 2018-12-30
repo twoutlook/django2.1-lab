@@ -4,45 +4,10 @@ Writing your first Django app, part 1
 
 
 
-.. warning::
-    原完整網頁參照官網 https://docs.djangoproject.com/en/2.1/intro/tutorial01/
-    ，以下是只是個人的心得筆記。(by Mark陳炳陵）
-
-
-Practice Makes Perfect
-==================
-
-Lab::
-
-    $ python3.6 -v venv venv
-    $ . venv/bin/activate
-    (venv)$ pip install django
-    (venv)$ django-admin startproject mysite
-    (venv)$ cd mysite
-    (venv)$ python manage.py startapp polls
-    
-    *** edit mysite/urls.py
-        add path('polls/', include('polls.urls')), above or below path('admin/', admin.site.urls),
-        add include to the line from django.urls import path
-    
-    *** new polls/urls.py
-        from django.urls import path
-        from . import views
-
-        urlpatterns = [
-            path('', views.index, name='index'),
-        ]
-    
-    *** add def index to polls/views.py
-        from django.http import HttpResponse    
-        def index(request):
-            return HttpResponse("Hello, world. You're at the polls index.")
-
-    
-    (venv)$ python manage.py runserver
-    *** browser, visit 127.0.0.1:8000
-    
-    
+.. note::
+    Ref. https://docs.djangoproject.com/en/2.1/intro/tutorial01/
+   
+ 
     
   
 1. Prepare Lab Virtual Envrionment
