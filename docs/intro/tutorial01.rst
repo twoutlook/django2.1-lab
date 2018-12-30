@@ -48,16 +48,13 @@ Lab::
 1. Prepare Lab Virtual Envrionment
 ==================
 
-    $ python3.6 -v venv venv
-    
-    $ . venv/bin/activate
-    
-    (venv)$ pip install django
+    $ python3.6 -v venv venv . 
+    $ . venv/bin/activate . 
+    (venv)$ pip install django . 
     
 
 .. note::
-    macOS 10.14.2
-    
+    macOS 10.14.2 . 
     Python3.6
  
     
