@@ -22,9 +22,8 @@ Lab::
     
 
 .. note::
-    pip freeze, to see installed packages.
-    
-    which python, to ensure which virtual envrionment you're using. 
+    $ pip freeze, to see installed packages.
+    $ which python, to ensure which virtual envrionment you're using. 
     
  
     
