@@ -33,10 +33,7 @@ Lab::
 Lab::
 
     *** edit poll/models.py
-    (venv)$ python manage.py makemigrations
-    (venv)$ python manage.py migrate
-    (venv)$ python manage.py runserver
-    *** Use browser to visit 127.0.0.1:8000/admin
+
 
 * polls/models.py::
 
