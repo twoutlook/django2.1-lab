@@ -2,12 +2,6 @@
 Writing your first Django app, part 1
 =====================================
 
-
-
-References
-==================
-* https://docs.djangoproject.com/en/2.1/intro/tutorial01/
-   
  .. admonition:: References:
 
     https://docs.djangoproject.com/en/2.1/intro/tutorial01/
