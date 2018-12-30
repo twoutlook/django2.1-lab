@@ -7,21 +7,22 @@ Writing your first Django app, part 2
   https://docs.djangoproject.com/en/2.1/intro/tutorial02/
     
   
-1. Prepare Lab Virtual Envrionment
+2-1. Migrate
 ==================
 
 Lab::
 
-    $ python3.6 -v venv venv 
-    $ source venv/bin/activate 
-    (venv)$ pip install django  
-    
+    (venv)$ python manage.py migrate 
+    (venv)$ python manage.py createsuperuser
+    (venv)$ python manage.py runserver
+    *** Use browser to visit 127.0.0.1:8000/admin
 
 .. note::
-    OS: macOS 10.14.2
-    Pythen version: 3.6
-    Command source can be in short .
-    
+    For beginner or rapid local development, use default database.
+
+.. warning::
+    Consider python manage.py shell as another topic
+
  
     
 2. Start Project and Run Development Server
