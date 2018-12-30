@@ -2,6 +2,8 @@
 Writing your first Django app, part 1
 =====================================
 
+on Read The Docs, https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial01.html
+
 .. admonition:: References:
 
   https://docs.djangoproject.com/en/2.1/intro/tutorial01/
@@ -18,9 +20,9 @@ Lab::
     
 
 .. note::
-    OS: macOS 10.14.2
-    Pythen version: 3.6
-    Command source can be in short .
+    pip freeze, to see installed packages.
+    
+    which python, to ensure which virtual envrionment you're using. 
     
  
     
