@@ -7,7 +7,7 @@ Writing your first Django app, part 2
   https://docs.djangoproject.com/en/2.1/intro/tutorial02/
     
   
-2-1. Migrate
+2-1. Use Django Admin
 ==================
 
 Lab::
@@ -21,60 +21,41 @@ Lab::
     For beginner or rapid local development, use default database.
 
 .. warning::
-    Consider python manage.py shell as another topic
+    Consider python manage.py shell as another topic. 
 
  
     
-2. Start Project and Run Development Server
+2-2. Create Models 
 ==================
 
 Lab::
 
-    (venv)$ django-admin startproject mysite
-    (venv)$ cd mysite
+    *** edit poll/models.py
+    (venv)$ python manage.py makemigrations
+    (venv)$ python manage.py migrate
     (venv)$ python manage.py runserver
-    *** Use browser to visit 127.0.0.1:8000
+    *** Use browser to visit 127.0.0.1:8000/admin
+
+
+.. code-block:: python
+    :caption: polls/models.py
+
+    from django.db import models
+
+
+    class Question(models.Model):
+        question_text = models.CharField(max_length=200)
+        pub_date = models.DateTimeField('date published')
+
+
+    class Choice(models.Model):
+        question = models.ForeignKey(Question, on_delete=models.CASCADE)
+        choice_text = models.CharField(max_length=200)
+        votes = models.IntegerField(default=0)
+
 
 .. note::
-    You should see a rocket on the page.
+    Always consider to maintian Model and Admin together.
 
     
-3. Start App and Maintain View and URLs
-==================
-
-Lab::
-
-    $ python manage.py startapp polls . 
-    *** edit mysite/urls.py
-        add path('polls/', include('polls.urls')), above or below path('admin/', admin.site.urls),
-        add include to the line from django.urls import path
-    
-    *** new polls/urls.py
-        from django.urls import path
-        from . import views
-
-        urlpatterns = [
-            path('', views.index, name='index'),
-        ]
-    
-    *** add def index to polls/views.py
-        from django.http import HttpResponse    
-        def index(request):
-            return HttpResponse("Hello, world. You're at the polls index.")
-
-    
-    (venv)$ python manage.py runserver
-    *** browser, visit 127.0.0.1:8000/polls
-    
-    
-
-.. note::
-    To ensure App is working.
-
-.. warning::
-    Be aware 127.0.0.1:8000 is damaged!
-
-
-
-
 
