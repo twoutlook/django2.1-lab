@@ -84,6 +84,21 @@ Lab::
 2-4. Maintain Poll's Admin
 ==================
 
+
+Lab::
+
+    *** edit mysite/settings.py
+    *** edit go.py
+
+
+* mysite/settings.py::
+
+   
+   INSTALLED_APPS = [
+      'polls',
+      'django.contrib.admin',
+      ...
+
 Lab::
 
     *** edit poll/admin.py 
