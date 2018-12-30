@@ -57,5 +57,25 @@ Lab::
 .. note::
     Always consider to maintian Model and Admin together.
 
-    
+   
+2-2. Add App to Settings 
+==================
+
+Lab::
+
+    *** edit poll/models.py
+    (venv)$ python manage.py makemigrations
+    (venv)$ python manage.py migrate
+    (venv)$ python manage.py runserver
+    *** Use browser to visit 127.0.0.1:8000/admin
+
+
+.. code-block:: python
+    :caption: mysite/settings.py
+
+    INSTALLED_APPS = [
+      'polls',
+      'django.contrib.admin',
+      ...
+
 
