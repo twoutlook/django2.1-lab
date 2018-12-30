@@ -6,7 +6,7 @@ Writing your first Django app, part 1
 * Read The Docs, `part 1 <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial01.html>`_
  
   
-1-1. Prepare Lab Virtual Envrionment
+1-1. Virtual Envrionment
 ==================
 
 Lab::
@@ -21,7 +21,7 @@ Lab::
     
  
     
-1-2. Start Project and Run Development Server
+1-2. Start Project
 ==================
 
 Lab::
@@ -41,7 +41,7 @@ Lab::
 
 
 
-1-3. Start App and Maintain View and URLs
+1-3. Start App
 ==================
 
 Lab::
