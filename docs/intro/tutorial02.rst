@@ -69,16 +69,16 @@ Lab::
 
 * mysite/settings.py::
 
-  INSTALLED_APPS = [
+   INSTALLED_APPS = [
       'polls',
       'django.contrib.admin',
       ...
     
 * go.py::
 
-    python manage.py makemigrations
-    python manage.py migrate
-    python manage.py runserver
+   python manage.py makemigrations
+   python manage.py migrate
+   python manage.py runserver
  
 2-4. Maintain Poll's Admin
 ==================
