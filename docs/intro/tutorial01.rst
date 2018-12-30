@@ -47,25 +47,25 @@ Lab::
   
 1. Prepare Lab Virtual Envrionment
 ==================
-
-    $ python3.6 -v venv venv . 
-    $ . venv/bin/activate . 
-    (venv)$ pip install django . 
+Lab::
+    $ python3.6 -v venv venv 
+    $ source venv/bin/activate 
+    (venv)$ pip install django  
     
 
 .. note::
-    macOS 10.14.2 . 
-    Python3.6
+    OS: macOS 10.14.2
+    Pythen version: 3.6
+    Command source can be in short .
+    
  
     
 2. Start Project and Run Development Server
 ==================
+Lab::
     (venv)$ django-admin startproject mysite
-    
     (venv)$ cd mysite
-    
     (venv)$ python manage.py runserver
-    
     *** Use browser to visit 127.0.0.1:8000
 
 .. note::
@@ -74,7 +74,7 @@ Lab::
     
 3. Start App and Maintain View and URLs
 ==================
-
+Lab::
     $ python manage.py startapp polls . 
     *** edit mysite/urls.py
         add path('polls/', include('polls.urls')), above or below path('admin/', admin.site.urls),
