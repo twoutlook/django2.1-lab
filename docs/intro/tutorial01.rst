@@ -47,6 +47,7 @@ Lab::
   
 1. Prepare Lab Virtual Envrionment
 ==================
+
 Lab::
     $ python3.6 -v venv venv 
     $ source venv/bin/activate 
@@ -62,6 +63,7 @@ Lab::
     
 2. Start Project and Run Development Server
 ==================
+
 Lab::
     (venv)$ django-admin startproject mysite
     (venv)$ cd mysite
@@ -74,6 +76,7 @@ Lab::
     
 3. Start App and Maintain View and URLs
 ==================
+
 Lab::
     $ python manage.py startapp polls . 
     *** edit mysite/urls.py
