@@ -9,7 +9,7 @@ Writing your first Django app, part 1
     ，以下是只是個人的心得筆記。(by Mark陳炳陵）
 
 
-套路練習
+Practice Makes Perfect
 ==================
 
 Lab::
