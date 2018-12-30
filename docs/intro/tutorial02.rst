@@ -2,7 +2,11 @@
 Writing your first Django app, part 2
 =====================================
 
-References , `here`_
+This is a paragraph that contains `a link`_.
+
+.. _a link: https://docs.djangoproject.com/en/2.1/intro/tutorial02/
+
+References , `here`_.
 
 .. _here:  https://docs.djangoproject.com/en/2.1/intro/tutorial02/
 
