@@ -88,35 +88,15 @@ Lab::
 Lab::
 
     *** edit poll/admin.py 
-    *** 
-
-
-* polls/admin.py::
-
-    from django.contrib import admin
-    from .models import Question,Choice
-    admin.site.register(Question)
-    admin.site.register(Choice)
    
-   INSTALLED_APPS = [
-      'polls',
-      'django.contrib.admin',
-      ...
 
-Lab::
-
-    *** edit poll/admin.py 
-    
-
-* go.py::
 * polls/admin.py::
 
-
-  from django.contrib import admin
-  from .models import Question,Choice
-  admin.site.register(Question)
-  admin.site.register(Choice)
-
+   from django.contrib import admin
+   from .models import Question,Choice
+   admin.site.register(Question)
+   admin.site.register(Choice)
+   
 .. warning::
     Be aware there's different approach, not exactly as official tutorial.
 
