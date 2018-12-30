@@ -109,5 +109,5 @@ Lab::
     (venv)$ . go
 
 .. note::
-    From right now, whenever you maintain model, Ctrl+C to stop server and source go to run again with database ready.
+    From right now, whenever you maintain model, Ctrl+C to stop server and source go to run server again.
 
