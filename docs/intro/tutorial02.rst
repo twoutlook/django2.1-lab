@@ -149,9 +149,9 @@ Lab::
 
 
 .. note::
-    You don't need to stop server to source go again. Developing environment do it for you. 
+    For this case, you don't need to stop and start server again. Developing environment do it for you. 
  
 .. warning::
-    TODO: Check Choice list. When you have more than one question, you might want to show Question as well.
+    TODO: When you have more than one question, you might want to show Question on Choice list as well.
  
  
