@@ -14,14 +14,18 @@ Lab::
     (venv)$ python manage.py createsuperuser
     (venv)$ . go
  
-
 .. note::
-    For beginner or rapid local development, use default database.
+    http://127.0.0.1:8000/admin/, to log in.
     
-    You should see AUTHENTICATION AND AUTHORIZATION and your newly created user.
+.. figure:: _static/img2-1_1.png
+    :align: center
+    
+.. figure:: _static/img2-1_2.png
+    :align: center
+    
+.. figure:: _static/img2-1_3.png
+    :align: center
 
-.. warning::
-    Consider python manage.py shell as another topic. 
 
  
     
