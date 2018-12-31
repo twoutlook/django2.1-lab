@@ -89,7 +89,7 @@ Lab::
     def index(request):
         return HttpResponse("Hello, world. You're at the polls index.")
 
-* go.py::
+* go::
     
 
     python manage.py runserver
