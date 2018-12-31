@@ -146,8 +146,7 @@ Lab::
 .. figure:: _static/img2-3_3.png
     :align: center
 
-.. figure:: _static/img2-3_4.png
-    :align: center
+
 
 .. note::
     You don't need to stop server to source go again. Developing environment do it for you. 
