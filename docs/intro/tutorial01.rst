@@ -104,7 +104,7 @@ Lab::
 
 
 .. warning::
-    Be aware http://127.0.0.1:8000/ is damaged!
+    Be aware http://127.0.0.1:8000 is damaged!
     
 .. figure:: _static/img1-3_02.png
     :align: center
