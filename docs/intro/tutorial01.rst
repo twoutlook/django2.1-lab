@@ -45,6 +45,7 @@ Lab::
 
 .. warning::
     You can keep one terminal with 'python manage.py runserver' and use a new terminal to 'python manage.py startapp polls'.
+    Or you can 'Quit the server with CONTROL-C' and source go to run server in a script. We will add more commands to script     go. 
  
 Lab::
 
@@ -52,6 +53,9 @@ Lab::
     *** edit mysite/urls.py    
     *** add polls/urls.py
     *** edit polls/views.py
+    *** add go.py
+    (venv)$ . go
+    
     
    
     
@@ -84,6 +88,11 @@ Lab::
     from django.http import HttpResponse    
     def index(request):
         return HttpResponse("Hello, world. You're at the polls index.")
+
+* go.py::
+    
+
+    python manage.py runserver
 
     
 
