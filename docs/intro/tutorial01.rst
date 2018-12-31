@@ -29,12 +29,11 @@ Lab::
     (venv)$ django-admin startproject mysite
     (venv)$ cd mysite
     (venv)$ python manage.py runserver
-    *** Use browser to visit 127.0.0.1:8000
 
 
 
 .. note::
-    To see a rocket!
+    http://127.0.0.1:8000/, to see a rocket!
 
 .. figure:: _static/img01-01.png
     :align: center
@@ -50,8 +49,6 @@ Lab::
     *** edit mysite/urls.py    
     *** add polls/urls.py
     *** edit polls/views.py
-    (venv)$ python manage.py runserver
-    *** 127.0.0.1:8000/polls/
     
     
 * mysite/urls.py::
@@ -85,14 +82,14 @@ Lab::
     
 
 .. note::
-    To ensure polls is working.
+    To ensure  http://127.0.0.1:8000/polls/ is working.
 
 .. figure:: _static/img1-3_01.png
     :align: center
 
 
 .. warning::
-    Be aware 127.0.0.1:8000 is damaged!
+    Be aware http://127.0.0.1:8000/ is damaged!
     
 .. figure:: _static/img1-3_02.png
     :align: center
