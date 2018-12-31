@@ -45,10 +45,15 @@ Lab::
 
 Lab::
 
-    $ python manage.py startapp polls
+    (venv)$ python manage.py startapp polls
     *** edit mysite/urls.py    
     *** add polls/urls.py
     *** edit polls/views.py
+    
+.. warning::
+    You can keep one terminal with 'python manage.py runserver' and use a new terminal to 'python manage.py startapp polls'.
+    
+    
     
     
 * mysite/urls.py::
