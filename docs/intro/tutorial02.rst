@@ -104,7 +104,7 @@ Lab::
     TODO: Turn 'Question object(1)' to be user-friendly.
  
  
-2-3. Model __str__
+2-3. __str__
 ==================
 
 Lab::
