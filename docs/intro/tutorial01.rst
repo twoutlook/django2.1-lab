@@ -43,6 +43,9 @@ Lab::
 1-3. Start App
 ==================
 
+.. warning::
+    You can keep one terminal with 'python manage.py runserver' and use a new terminal to 'python manage.py startapp polls'.
+ 
 Lab::
 
     (venv)$ python manage.py startapp polls
@@ -50,9 +53,7 @@ Lab::
     *** add polls/urls.py
     *** edit polls/views.py
     
-.. warning::
-    You can keep one terminal with 'python manage.py runserver' and use a new terminal to 'python manage.py startapp polls'.
-    
+   
     
     
     
