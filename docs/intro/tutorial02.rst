@@ -34,11 +34,22 @@ Lab::
 
 Lab::
 
-    *** edit poll/models.py
     *** edit mysite/settings.py
+    *** edit poll/models.py
+    *** edit poll/admin.py 
     *** edit go
     . go
 
+
+
+* mysite/settings.py::
+
+   
+   INSTALLED_APPS = [
+      'polls',
+      'django.contrib.admin',
+      ...
+    
 
 * polls/models.py::
 
@@ -56,49 +67,19 @@ Lab::
         choice_text = models.CharField(max_length=200)
         votes = models.IntegerField(default=0)
 
-
-
-* mysite/settings.py::
-
-   
-   INSTALLED_APPS = [
-      'polls',
-      'django.contrib.admin',
-      ...
-    
-* go.py::
-
-   python manage.py makemigrations
-   python manage.py migrate
-   python manage.py runserver
- 
-2-4. Admin App
-==================
-
-
-Lab::
-
-    *** edit poll/admin.py 
-   
-
 * polls/admin.py::
 
    from django.contrib import admin
    from .models import Question,Choice
    admin.site.register(Question)
    admin.site.register(Choice)
+
+
+* go.py::
+
+   python manage.py makemigrations
+   python manage.py migrate
+   python manage.py runserver
+ 
+
    
-.. warning::
-    Be aware there's different approach, not exactly as official tutorial.
-
-
-2-5. Go
-==================
-
-Lab::
-
-    (venv)$ . go
-
-.. note::
-    From right now, whenever you maintain model, Ctrl+C to stop server and source go to run server again.
-
