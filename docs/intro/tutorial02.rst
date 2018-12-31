@@ -104,3 +104,55 @@ Lab::
     TODO: Turn 'Question object(1)' to be user-friendly.
  
  
+2-3. Model __str__
+==================
+
+Lab::
+
+ 
+    *** edit poll/models.py
+   
+
+
+
+
+* polls/models.py::
+
+
+    from django.db import models
+
+
+    class Question(models.Model):
+        question_text = models.CharField(max_length=200)
+        pub_date = models.DateTimeField('date published')
+        def __str__(self):
+            return self.question_text
+
+    class Choice(models.Model):
+        question = models.ForeignKey(Question, on_delete=models.CASCADE)
+        choice_text = models.CharField(max_length=200)
+        votes = models.IntegerField(default=0)
+        def __str__(self):
+            return self.choice_text
+
+
+
+.. figure:: _static/img2-3_1.png
+    :align: center
+    
+.. figure:: _static/img2-3_2.png
+    :align: center
+    
+.. figure:: _static/img2-3_3.png
+    :align: center
+
+.. figure:: _static/img2-3_4.png
+    :align: center
+
+.. note::
+    You don't need to stop server to source go again. Developing environment do it for you. 
+ 
+.. warning::
+    TODO: Check Choice list. When you have more than one question, you might want to show Question as well.
+ 
+ 
