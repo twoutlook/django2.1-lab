@@ -35,6 +35,9 @@ Lab::
 Lab::
 
     *** edit poll/models.py
+    *** edit mysite/settings.py
+    *** edit go
+    . go
 
 
 * polls/models.py::
@@ -53,17 +56,6 @@ Lab::
         choice_text = models.CharField(max_length=200)
         votes = models.IntegerField(default=0)
 
-
-.. note::
-     You should see POLLS and Questions and Choices
-   
-2-3. Add App to Settings and Make Script
-==================
-
-Lab::
-
-    *** edit mysite/settings.py
-    *** edit go.py
 
 
 * mysite/settings.py::
