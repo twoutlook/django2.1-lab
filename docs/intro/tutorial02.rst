@@ -82,4 +82,12 @@ Lab::
    python manage.py runserver
  
 
-   
+.. figure:: _static/img2-2_1.png
+    :align: center
+    
+.. figure:: _static/img2-2_2.png
+    :align: center
+    
+.. figure:: _static/img2-2_3.png
+    :align: center
+
