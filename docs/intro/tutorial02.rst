@@ -26,7 +26,8 @@ Lab::
 .. figure:: _static/img2-1_3.png
     :align: center
 
-
+.. note::
+    $ Able to use Django Admin. 
  
     
 2-2. Model 
@@ -91,3 +92,13 @@ Lab::
 .. figure:: _static/img2-2_3.png
     :align: center
 
+.. figure:: _static/img2-2_4.png
+    :align: center
+
+.. note::
+    Able to use Django Admin to add/edit Question and Choice. 
+ 
+.. warning::
+    TODO: Turn 'Question object(1)' to be user-friendly.
+ 
+ 
