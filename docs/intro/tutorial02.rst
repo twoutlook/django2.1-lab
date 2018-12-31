@@ -12,8 +12,8 @@ Lab::
 
     (venv)$ python manage.py migrate 
     (venv)$ python manage.py createsuperuser
-    (venv)$ python manage.py runserver
-    *** 127.0.0.1:8000/admin/
+    (venv)$ . go
+ 
 
 .. note::
     For beginner or rapid local development, use default database.
