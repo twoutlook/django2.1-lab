@@ -21,11 +21,6 @@ Lab::
     :align: center
     
 
-
-.. note::
-    Able to use Django Admin. 
- 
-
     
 2-2. Model 
 ==================
