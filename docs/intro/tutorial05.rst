@@ -15,7 +15,7 @@ Lab::
 
     *** edit mysite/urls.py
     *** edit polls/tests.py
-    *** edit polls/templates/index.html
+    *** add polls/templates/index.html
     (venv)$ python manage.py test
 
 * polls/urls.py::
