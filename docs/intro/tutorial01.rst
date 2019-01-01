@@ -21,7 +21,7 @@ Lab::
     $ To check installed packages. 
    
 .. figure:: _static/img1-1_01.png
-    :align: left
+    :align: center
  
     
 1-2. Start Project
@@ -99,14 +99,14 @@ Lab::
     To ensure  http://127.0.0.1:8000/polls/ is working.
 
 .. figure:: _static/img1-3_01.png
-    :align: left
+    :align: center
 
 
 .. warning::
     Be aware http://127.0.0.1:8000 is damaged!
     
 .. figure:: _static/img1-3_02.png
-    :align: left
+    :align: center
 
 
 
