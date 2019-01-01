@@ -2,9 +2,9 @@
 Django2.1 Tutotrial Lab
 ====================
 
-The main purpose of this project is to practice Django 2.1 `Getting started <https://docs.djangoproject.com/en/2.1/intro/tutorial01/>`_ effectively.
+The main purpose of this project is to practice Django 2.1 `Getting started <https://docs.djangoproject.com/en/2.1/intro/>`_ effectively.
 
-Like Yoga's daily practice, I need a routine to warm up my body and mind.
+Like Yoga's daily practice, I need a routine to awaken my body and mind. Same as programming, I need a set of labaotry to maintain skills and to invoke some ideas.
 
 
 Simple is Power
