@@ -12,7 +12,7 @@ Writing your first Django app, part 3
 
 Lab::
 
-    *** edit poll/views.py
+    *** edit polls/views.py
     *** add polls/templates/polls/index.html
 
 
