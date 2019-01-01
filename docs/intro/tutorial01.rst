@@ -14,11 +14,14 @@ Lab::
     $ python3.6 -v venv venv 
     $ source venv/bin/activate 
     (venv)$ pip install django  
+    (venv)$ pip freeze 
     
 
 .. note::
-    $ which python, to ensure which virtual envrionment you're using. 
-    
+    $ To check installed packages. 
+   
+.. figure:: _static/img1-1_01.png
+    :align: center
  
     
 1-2. Start Project
@@ -33,7 +36,7 @@ Lab::
 
 
 .. note::
-    http://127.0.0.1:8000, to see a rocket!
+    To see a rocket!
 
 .. figure:: _static/img1-2_01.png
     :align: center
