@@ -15,22 +15,17 @@ Lab::
     (venv)$ . go
  
 .. note::
-    http://127.0.0.1:8000/admin/, to log in.
+    http://127.0.0.1:8000/admin/, login to check user/group.
     
-.. figure:: _static/img2-1_1.png
+.. figure:: _static/img2-1-1.png
     :align: center
     
-.. figure:: _static/img2-1_2.png
-    :align: center
-    
-.. figure:: _static/img2-1_3.png
-    :align: center
+
 
 .. note::
     Able to use Django Admin. 
  
-.. warning::
-    Any why question, please read original tutorial from Django Getting started, `part 2     <https://docs.djangoproject.com/en/2.1/intro/tutorial02/>`_
+
     
 2-2. Model 
 ==================
