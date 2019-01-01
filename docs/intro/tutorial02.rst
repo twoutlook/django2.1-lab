@@ -15,7 +15,7 @@ Lab::
     (venv)$ . go
  
 .. note::
-    http://127.0.0.1:8000/admin/, login to check user/group.
+    http://127.0.0.1:8000/admin/, login to maintain user/group.
     
 .. figure:: _static/img2-1-1.png
     :align: center
