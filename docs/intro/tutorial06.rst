@@ -35,7 +35,7 @@ Lab::
     }
 
 
-* polls/templates/base.html
+* polls/templates/base.html::
 
 
     {% load static %}
@@ -70,7 +70,7 @@ Lab::
     </html>
 
         
-* polls/templates/index.html
+* polls/templates/index.html::
 
 
     {% extends 'polls/base.html' %}
@@ -88,7 +88,7 @@ Lab::
     {% endblock %}
   
         
-* polls/templates/detail.html
+* polls/templates/detail.html::
 
 
     {% extends 'polls/base.html' %}
