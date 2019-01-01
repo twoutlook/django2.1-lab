@@ -10,7 +10,7 @@ Writing your first Django app, part 6
   
 
     
-6-1. Test 
+6-1. Template Extending
 ==================
 
 Lab::
