@@ -60,12 +60,15 @@ Lab::
     *** edit polls/urls.py
     *** edit polls/models.py
     *** edit polls/views.py
-    *** add polls/templates/polls/index.html
+    *** edit polls/templates/polls/index.html
+    *** add polls/templates/polls/detail.html
+    . go
 
 * polls/urls.py::
 
     from django.urls import path
     from . import views
+    app_name = 'polls'
 
     urlpatterns = [
       path('', views.index, name='index'),
@@ -107,7 +110,17 @@ Lab::
         
         
 * polls/templates/polls/index.html::
-
+    {% if latest_question_list %}
+      <ul>
+      {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+      {% endfor %}
+      </ul>
+    {% else %}
+      <p>No polls are available.</p>
+    {% endif %}
+        
+* polls/templates/polls/detail.html::
     <h1>{{ question.question_text }}</h1>
     <ul>
     {% for choice in question.choice_set.all %}
