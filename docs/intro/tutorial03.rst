@@ -52,6 +52,63 @@ Lab::
     Admin vs. customized page. 
  
 
+3-2. Polls Detail 
+==================
+
+Lab::
+
+    *** edit polls/urls.py
+    *** edit polls/views.py
+    *** add polls/templates/polls/index.html
+
+* polls/views.py::
+
+    from django.urls import path
+    from . import views
+
+    urlpatterns = [
+      path('', views.index, name='index'),
+      path('<int:question_id>/', views.detail, name='detail')
+    ]
+
+
+* polls/views.py::
+
+    from django.shortcuts import render,get_object_or_404
+    from .models import Question
+
+    def index(request):
+        latest_question_list = Question.objects.order_by('-pub_date')[:5]
+        context = {'latest_question_list': latest_question_list}
+        return render(request, 'polls/index.html', context)
+
+    def detail(request, question_id):
+        question = get_object_or_404(Question, pk=question_id)
+        return render(request, 'polls/detail.html', {'question': question})
+
+        
+        
+* polls/templates/polls/index.html::
+
+    <h1>{{ question.question_text }}</h1>
+    <ul>
+    {% for choice in question.choice_set.all %}
+        <li>{{ choice.choice_text }}</li>
+    {% endfor %}
+    </ul>
+        
+
+.. figure:: _static/img3-2-1.png
+    :align: center
+    
+.. figure:: _static/img3-2-2.png
+    :align: center
+ 
+
+.. note::
+    Admin vs. customized page. 
+ 
+
  
 
  
