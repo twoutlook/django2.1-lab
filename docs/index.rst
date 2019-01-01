@@ -6,7 +6,7 @@ Django2.1 Tutotrial Lab
 
 The main purpose of this project is to practice Django 2.1 `Getting started <https://docs.djangoproject.com/en/2.1/intro/>`_ effectively.
 
-Like Yoga's daily practice, I need a routine to awaken my body and mind. Same as programming, I need a set of labaotry to maintain skills and to invoke some ideas.
+Like Yoga's daily practice, I need a routine to awaken my body and mind. Same as programming, I need lab to maintain skills to invoke ideas.
 
 
 Simple is Power
