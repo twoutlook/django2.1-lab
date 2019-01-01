@@ -124,7 +124,7 @@ Lab::
  
 
 .. note::
-    Admin vs. customized page. 
+    Also modify Choice's __str__ 
  
 
  
