@@ -35,7 +35,7 @@ Lab::
 .. note::
     http://127.0.0.1:8000, to see a rocket!
 
-.. figure:: _static/img01-01.png
+.. figure:: _static/img1-2_01.png
     :align: center
 
 
