@@ -107,7 +107,7 @@ Lab::
     </form>
     {% endblock %}
 
-* polls/templates/results.html
+* polls/templates/results.html::
 
 
     {% extends 'polls/base.html' %}
