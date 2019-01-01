@@ -29,6 +29,7 @@ Lab::
         
         
 * polls/templates/polls/index.html::
+
     {% if latest_question_list %}
       <ul>
       {% for question in latest_question_list %}
