@@ -14,9 +14,9 @@ Lab::
 
     *** edit polls/urls.py
     *** edit polls/views.py
-    *** add polls/templates/polls/detail.html
-    *** edit polls/templates/polls/vote.html
-    *** edit polls/templates/polls/result.html
+    *** edit polls/templates/polls/detail.html
+    *** add polls/templates/polls/vote.html
+    *** add polls/templates/polls/result.html
     . go
 
 * polls/urls.py::
