@@ -25,6 +25,7 @@ Lab::
 
 * polls/static/polls/style.css::
 
+
     body{
       margin-top: 12px;
     }
@@ -35,6 +36,7 @@ Lab::
 
 
 * polls/templates/base.html
+
 
     {% load static %}
     <!doctype html>
@@ -70,6 +72,7 @@ Lab::
         
 * polls/templates/index.html
 
+
     {% extends 'polls/base.html' %}
     {% block content %}
 
@@ -86,6 +89,7 @@ Lab::
   
         
 * polls/templates/detail.html
+
 
     {% extends 'polls/base.html' %}
     {% block content %}
@@ -104,6 +108,7 @@ Lab::
     {% endblock %}
 
 * polls/templates/results.html
+
 
     {% extends 'polls/base.html' %}
     {% block content %}
@@ -127,9 +132,7 @@ Lab::
 .. figure:: _static/img6-1-3.png
     :align: center
     
-.. figure:: _static/img6-1-3.png
-    :align: center
- 
+
 
 .. warning::
     You might need to 'Clear Browsing Data' to let css working during development.
