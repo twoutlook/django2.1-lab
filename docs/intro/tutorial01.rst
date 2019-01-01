@@ -46,10 +46,6 @@ Lab::
 1-3. Start App
 ==================
 
-.. warning::
-    You can keep one terminal with 'python manage.py runserver' and use a new terminal to 'python manage.py startapp polls'.
-    Or you can 'Quit the server with CONTROL-C' and source go to run server in a script. We will add more commands to script     go. 
- 
 Lab::
 
     (venv)$ python manage.py startapp polls
