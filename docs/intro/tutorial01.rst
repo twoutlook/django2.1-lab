@@ -21,7 +21,7 @@ Lab::
     $ To check installed packages. 
    
 .. figure:: _static/img1-1_01.png
-    :align: center
+    :align: left
  
     
 1-2. Start Project
