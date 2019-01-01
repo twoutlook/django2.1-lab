@@ -129,19 +129,9 @@ Lab::
 
 .. figure:: _static/img2-3_1.png
     :align: center
-    
-.. figure:: _static/img2-3_2.png
-    :align: center
-    
-.. figure:: _static/img2-3_3.png
-    :align: center
 
 
 
-.. note::
-    For this case, you don't need to stop and start server again. Developing environment do it for you. 
- 
-.. warning::
-    TODO: When you have more than one question, you might want to show Question on Choice list as well.
+
  
  
