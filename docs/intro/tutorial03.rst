@@ -110,6 +110,7 @@ Lab::
         
         
 * polls/templates/polls/index.html::
+
     {% if latest_question_list %}
       <ul>
       {% for question in latest_question_list %}
@@ -121,6 +122,7 @@ Lab::
     {% endif %}
         
 * polls/templates/polls/detail.html::
+
     <h1>{{ question.question_text }}</h1>
     <ul>
     {% for choice in question.choice_set.all %}
