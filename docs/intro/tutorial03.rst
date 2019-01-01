@@ -46,7 +46,7 @@ Lab::
     
 .. figure:: _static/img3-1-2.png
     :align: center
-
+ 
 
 .. note::
     Admin vs. customized page. 
