@@ -16,68 +16,123 @@ Writing your first Django app, part 6
 Lab::
 
 
-    *** edit mysite/urls.py
-    *** edit polls/tests.py
-    *** add polls/templates/index.html
+    *** edit polls/static/polls/style.css
+    *** add polls/templates/base.html
+    *** edit polls/templates/index.html
+    *** edit polls/templates/detail.html
+    *** edit polls/templates/results.html
     (venv)$ python manage.py test
 
-* polls/urls.py::
+* polls/static/polls/style.css::
 
-    from django.contrib import admin
-    from django.urls import path,include
-    from django.views.generic import TemplateView
+    body{
+      margin-top: 12px;
+    }
 
-    urlpatterns = [
-        path('admin/', admin.site.urls),
-        path('polls/', include('polls.urls')),
-        path('', TemplateView.as_view(template_name="index.html"),name='index'),
-    ]
+    li a {
+        color: black;
+    }
 
 
-* polls/tests.py::
+* polls/templates/base.html
 
-    from django.test import TestCase
-    from django.utils import timezone
-    from django.urls import reverse
-    import datetime
+    {% load static %}
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    from .models import Question
-
-    class QuestionModelTests(TestCase):
-
-        def test_was_published_recently_with_future_question(self):
-            """
-            was_published_recently() returns False for questions whose pub_date
-            is in the future.
-            """
-            time = timezone.now() + datetime.timedelta(days=30)
-            future_question = Question(pub_date=time)
-            self.assertIs(future_question.was_published_recently(), False)
-
-        def test_hello_world(self):
-            response = self.client.get(reverse('index'))
-            self.assertEqual(response.status_code, 200)
-            self.assertContains(response, "Hello World!")        
-
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+        <title>Lab</title>
+      </head>
+      <body>
+        <div class="container">
+          <h1><a href='/polls/'>Django2.1 Tutotrial Lab</a></h1>
+              <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+      </body>
+    </html>
 
         
-* polls/templates/index.html::
+* polls/templates/index.html
 
-    Hello World!
+    {% extends 'polls/base.html' %}
+    {% block content %}
+
+    {% if latest_question_list %}
+      <h3><ul>
+      {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+      {% endfor %}
+    </ul></h3>
+    {% else %}
+      <p>No polls are available.</p>
+    {% endif %}
+    {% endblock %}
+  
         
+* polls/templates/detail.html
 
+    {% extends 'polls/base.html' %}
+    {% block content %}
+    <h3>{{ question.question_text }}</h3>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    <form action="{% url 'polls:vote' question.id %}" method="post">
+    {% csrf_token %}
+    {% for choice in question.choice_set.all %}
+        <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+        <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+    {% endfor %}
+    <input class='btn btn-success' type="submit" value="Vote">
+    </form>
+    {% endblock %}
+
+* polls/templates/results.html
+
+    {% extends 'polls/base.html' %}
+    {% block content %}
+    <h2>{{ question.question_text }}</h2>
+
+    <ul>
+    {% for choice in question.choice_set.all %}
+        <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+    {% endfor %}
+    </ul>
+
+    <a class='btn btn-success' href="{% url 'polls:detail' question.id %}">Vote again?</a>
+    {% endblock %}
 
 .. figure:: _static/img6-1-1.png
     :align: center
     
 .. figure:: _static/img6-1-2.png
     :align: center
+    
+.. figure:: _static/img6-1-3.png
+    :align: center
+    
 .. figure:: _static/img6-1-3.png
     :align: center
  
 
-.. note::
-    Fix / with 'Hello World!' using CBV.
+.. warning::
+    You might need to 'Clear Browsing Data' to let css working during development.
  
 
  
