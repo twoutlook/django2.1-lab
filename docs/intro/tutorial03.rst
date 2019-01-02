@@ -200,6 +200,8 @@ Lab::
 .. figure:: _static/img3-3-1.png
     :align: center
     
+.. figure:: _static/img3-3-2.png
+    :align: center
 
  
  
