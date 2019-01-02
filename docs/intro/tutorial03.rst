@@ -160,6 +160,14 @@ Lab::
     *** edit polls/admin.py
     . go 
 
+
+* mysite/setting.py::
+
+    STATIC_URL = '/static/'
+
+    # https://tutorial.djangogirls.org/en/django_start_project/
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 .. figure:: _static/img3-3-1.png
     :align: center
     
