@@ -143,7 +143,7 @@ Lab::
 .. figure:: _static/img2-3-2.png
     :align: center
  
-.. figure:: _static/img2-3-4.png
+.. figure:: _static/img2-3-3.png
     :align: center
     
 .. figure:: _static/img2-3-4.png
