@@ -44,12 +44,11 @@ Lab::
 .. figure:: _static/img3-1-1.png
     :align: center
     
-.. figure:: _static/img3-1-2.png
-    :align: center
+
  
 
 .. note::
-    Admin vs. customized page. 
+    Show questions on our polls page. 
  
 
 3-2. Polls Detail 
