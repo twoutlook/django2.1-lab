@@ -141,5 +141,8 @@ Lab::
 
  
 
- 
+ .. figure:: _static/img2-3-1.png
+    :align: center
+.. figure:: _static/img2-3-2.png
+    :align: center
  
