@@ -19,6 +19,9 @@ Lab::
     
 .. figure:: _static/img2-1-1.png
     :align: center
+.. figure:: _static/img2-1-2.png
+    :align: center
+    
     
 
     
