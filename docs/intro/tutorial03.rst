@@ -140,14 +140,7 @@ Lab::
 
 .. figure:: _static/img3-2-1.png
     :align: center
-    
-.. figure:: _static/img3-2-2.png
-    :align: center
- 
 
-.. note::
-    Also modify Choice's __str__ 
- 
 
 3-3. Django import / export
 ==================
