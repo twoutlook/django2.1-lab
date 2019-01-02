@@ -3,6 +3,9 @@ Writing your first Django app, part 2
 =====================================
 
 * Django Getting started, `part 2 <https://docs.djangoproject.com/en/2.1/intro/tutorial02/>`_
+* Writing custom `django-admin commands  <https://docs.djangoproject.com/en/2.1/howto/custom-management-commands/>`_
+
+
 * Read The Docs, `part 2 <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial02.html>`_
   
 2-1. Admin
@@ -97,8 +100,44 @@ Lab::
 .. figure:: _static/img2-2-2.png
     :align: center
     
+    
+2-3. Command 
+==================
+
+Lab::
+
+    *** add polls/management/commands/initpolls.py
+    python manage.py
+    python manage.py initpolls
+    . go
+    
 
  
+* polls/management/commands/initpolls.py::
+
+
+    from django.core.management.base import BaseCommand, CommandError
+    from polls.models import Question,Choice
+    from django.utils import timezone
+
+    class Command(BaseCommand):
+        help = 'Create sample questions and choices.'
+
+        def handle(self, *args, **options):
+            q = Question.objects.all()
+            q.delete()
+
+            q = Question(question_text="This is sample question #1",pub_date=timezone.now())
+            q.save()
+            q.choice_set.create(choice_text='samele choice A for #1',votes=0)
+            q.choice_set.create(choice_text='samele choice B for #1',votes=0)
+            q.choice_set.create(choice_text='samele choice C for #1',votes=0)
+
+            q = Question(question_text="This is sample question #2",pub_date=timezone.now())
+            q.save()
+            q.choice_set.create(choice_text='samele choice A for #2',votes=0)
+            q.choice_set.create(choice_text='samele choice B for #2',votes=0)
+            q.choice_set.create(choice_text='samele choice C for #2',votes=0)
 
  
 
