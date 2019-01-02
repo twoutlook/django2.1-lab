@@ -17,8 +17,18 @@ Repeat practice and find out your weakness.
 You have your right to be an individual thinker.
 
 
+Terminal Prompt
+---------------
+Before activate virtual environment
 
+export PS1='$ '
 
+Before activate virtual environment
+
+export PS1='(venv)$ '
+
+To determine which python
+which python 
 
 Table of Contents
 -----------------
