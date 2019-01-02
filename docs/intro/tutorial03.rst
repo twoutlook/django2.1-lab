@@ -1,8 +1,14 @@
 =====================================
 Writing your first Django app, part 3
 =====================================
-
+References:
 * Django Getting started, `part 3 <https://docs.djangoproject.com/en/2.1/intro/tutorial03/>`_
+* Django Grils Tutorial, `STATIC_ROOT <https://tutorial.djangogirls.org/en/django_start_project//#changing-settings>`_
+
+
+* Django , `Django import / export <https://django-import-export.readthedocs.io/>`_
+
+Hosting:
 * Read The Docs, `part 3 <https://django21-tutorial-lab.readthedocs.io/en/latest/intro/tutorial03.html>`_
   
 
@@ -141,7 +147,21 @@ Lab::
     Also modify Choice's __str__ 
  
 
- 
+3-3. Django import / export
+==================
 
+Lab::
+
+    pip install django-import-export
+    pip freeze
+    *** edit mysite/setting.py
+    *** edit polls/admin.py
+    . go 
+
+ .. figure:: _static/img3-3-1.png
+    :align: center
+    
+.. figure:: _static/img3-3-2.png
+    :align: center
  
  
