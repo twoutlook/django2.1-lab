@@ -163,8 +163,12 @@ Lab::
 
 * mysite/setting.py::
 
+    INSTALLED_APPS = (
+      'import_export',
+      ...
+    
+  
     STATIC_URL = '/static/'
-
     # https://tutorial.djangogirls.org/en/django_start_project/
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
