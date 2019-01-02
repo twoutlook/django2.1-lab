@@ -158,9 +158,10 @@ Lab::
 
     INSTALLED_APPS = (
       'import_export',
+      'polls',
       ...
     
-  
+    ...
     STATIC_URL = '/static/'
     # https://tutorial.djangogirls.org/en/django_start_project/
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
@@ -168,7 +169,6 @@ Lab::
 .. figure:: _static/img3-3-1.png
     :align: center
     
-.. figure:: _static/img3-3-2.png
-    :align: center
+
  
  
