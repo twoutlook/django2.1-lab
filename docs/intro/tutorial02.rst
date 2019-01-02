@@ -119,21 +119,32 @@ Lab::
     class Command(BaseCommand):
         help = 'Create sample questions and choices.'
 
+        def add_arguments(self, parser):
+            parser.add_argument('question_num',type=int)
+
         def handle(self, *args, **options):
             q = Question.objects.all()
             q.delete()
 
-            q = Question(question_text="This is sample question #1",pub_date=timezone.now())
-            q.save()
-            q.choice_set.create(choice_text='samele choice A for #1',votes=0)
-            q.choice_set.create(choice_text='samele choice B for #1',votes=0)
-            q.choice_set.create(choice_text='samele choice C for #1',votes=0)
+            cnt = 0
+            question_num = options['question_num']
+            while (cnt < question_num):
+                cnt += 1
+                if cnt > 12:
+                    self.stdout.write(self.style.WARNING('Max number was set to 12'))
+                    break
+                q = Question(question_text="Question #"+str(cnt),pub_date=timezone.now())
+                q.save()
+                q.choice_set.create(choice_text='Choice A for Question #'+str(cnt),votes=0)
+                q.choice_set.create(choice_text='Choice B for Question #'+str(cnt),votes=0)
+                q.choice_set.create(choice_text='Choice C for Question #'+str(cnt),votes=0)
 
-            q = Question(question_text="This is sample question #2",pub_date=timezone.now())
-            q.save()
-            q.choice_set.create(choice_text='samele choice A for #2',votes=0)
-            q.choice_set.create(choice_text='samele choice B for #2',votes=0)
-            q.choice_set.create(choice_text='samele choice C for #2',votes=0)
+            q = Question.objects.all()
+            c = Choice.objects.all()
+
+            self.stdout.write(self.style.SUCCESS('Questions "%s"' % q))
+            self.stdout.write(self.style.SUCCESS('Choices "%s"' % c))
+
 
  
 
