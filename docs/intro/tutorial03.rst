@@ -166,6 +166,37 @@ Lab::
     # https://tutorial.djangogirls.org/en/django_start_project/
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+* polls/admin.py::
+
+
+    from django.contrib import admin
+
+    from import_export import resources
+    from import_export.admin import ImportExportModelAdmin
+
+    from .models import Question,Choice
+
+
+    class QuestionResource(resources.ModelResource):
+        class Meta:
+            model = Question
+
+    class QuestionAdmin(ImportExportModelAdmin):
+        resource_class = QuestionResource
+
+    admin.site.register(Question,QuestionAdmin)
+
+    class ChoiceResource(resources.ModelResource):
+        class Meta:
+            model = Choice
+
+    class ChoiceAdmin(ImportExportModelAdmin):
+        resource_class = ChoiceResource
+
+    admin.site.register(Choice,ChoiceAdmin)
+
+
+
 .. figure:: _static/img3-3-1.png
     :align: center
     
