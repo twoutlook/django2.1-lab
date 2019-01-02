@@ -7,7 +7,7 @@ Writing your first Django app, part 4
   
 
     
-3-1. Forms 
+4-1. Forms 
 ==================
 
 Lab::
