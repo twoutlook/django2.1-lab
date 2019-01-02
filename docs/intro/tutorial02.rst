@@ -81,6 +81,13 @@ Lab::
    python manage.py runserver
  
 
+
+.. note::
+    Able to maintain Question and Choice. 
+ 
+.. warning::
+    To add two questions and theree choices for each question. 
+    
 .. figure:: _static/img2-2-0.png
     :align: center
     
@@ -91,12 +98,6 @@ Lab::
     :align: center
     
 
-
-.. note::
-    Able to maintain Question and Choice. 
- 
-.. warning::
-    To add two questions and theree choices for each question. 
  
 
  
