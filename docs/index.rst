@@ -28,6 +28,7 @@ After activate virtual environment::
    export PS1='(venv)$ '
 
 To determine which python::
+
    which python 
 
 Table of Contents
