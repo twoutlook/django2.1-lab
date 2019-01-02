@@ -19,16 +19,16 @@ You have your right to be an individual thinker.
 
 Terminal Prompt
 ---------------
-Before activate virtual environment
+Before activate virtual environment::
 
-export PS1='$ '
+   export PS1='$ '
 
-Before activate virtual environment
+After activate virtual environment::
 
-export PS1='(venv)$ '
+   export PS1='(venv)$ '
 
-To determine which python
-which python 
+To determine which python::
+   which python 
 
 Table of Contents
 -----------------
