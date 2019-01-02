@@ -106,10 +106,10 @@ Lab::
 
 
 
-.. figure:: _static/img4-1-1.png
+.. figure:: _static/img4-1-1-v2.png
     :align: center
     
-.. figure:: _static/img4-1-2.png
+.. figure:: _static/img4-1-2-v2.png
     :align: center
  
 
