@@ -89,6 +89,9 @@ Lab::
 .. note::
     Able to maintain Question and Choice. 
  
+.. warning::
+    To add two questions and theree choices for each question. 
+ 
 
  
 
