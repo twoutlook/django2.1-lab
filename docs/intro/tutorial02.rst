@@ -94,11 +94,7 @@ Lab::
 .. figure:: _static/img2-2-0.png
     :align: center
     
-.. figure:: _static/img2-2-1.png
-    :align: center
-    
-.. figure:: _static/img2-2-2.png
-    :align: center
+
     
     
 2-3. Command 
@@ -146,3 +142,8 @@ Lab::
 .. figure:: _static/img2-3-2.png
     :align: center
  
+ .. figure:: _static/img2-3-4.png
+    :align: center
+    
+.. figure:: _static/img2-3-4.png
+    :align: center
