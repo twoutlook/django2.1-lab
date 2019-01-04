@@ -4,7 +4,7 @@ Want List
 
 Hosting:
 
-* Read The Docs, `Django2.1 Tutotrial Lab <https://django21-tutorial-lab.readthedocs.io/>`_
+* Read The Docs, `Want List <https://django21-tutorial-lab.readthedocs.io/>`_
 
 python manage.py startapp
 =========================
