@@ -2,6 +2,9 @@
 Django2.1 Tutotrial Lab
 ====================
 
+
+Hosting:
+
 * Read The Docs, `Django2.1 Tutotrial Lab <https://django21-tutorial-lab.readthedocs.io/>`_
 
 The main purpose of this project is to practice Django 2.1 `Getting started <https://docs.djangoproject.com/en/2.1/intro/>`_ effectively.
