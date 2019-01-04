@@ -20,3 +20,7 @@ python manage.py startapp
 -------------
 
 
+
+.. toctree::
+   want01
+   
