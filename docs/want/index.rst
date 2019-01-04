@@ -29,4 +29,5 @@ Something we need to guess to assume first. Then to verify and to adjust.
       :maxdepth: 2
    
       want001
+      want002
    
