@@ -22,6 +22,5 @@ python manage.py startapp
 
 
 .. toctree::
-   :maxdepth: 2
-   want001
+      want001
    
