@@ -42,3 +42,4 @@ Table of Contents
    intro/tutorial05
    intro/tutorial06
    intro/tutorial07
+   want/want001
