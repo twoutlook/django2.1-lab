@@ -6,18 +6,22 @@ Hosting:
 
 * Read The Docs, `Want List <https://django21-tutorial-lab.readthedocs.io/en/latest/want/index.html>`_
 
-python manage.py startapp
+Why? 
 =========================
-根據個人的開發經驗，urls.py, templates/{{app_name}}/base.html, 總是會用到的，為什麼不預設就有呢？
+
+From Django tutorial, we learned 
+
+    python manage.py startapp polls
+    
+Later on we still need to create urls.py for route.
+And, to be production ready, we also need to have templates/polls/base.html, as well as static/polls/style.css.
+Why not to provide a much ready templates for startapp?
 
 
-從文檔和代碼看目前做法
--------------
+Learn lower level python 
+---------
+Something we need to guess to assume first. Then to verify and to adjust.
 
-
-
-模版
--------------
 
 
 
