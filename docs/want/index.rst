@@ -22,5 +22,5 @@ python manage.py startapp
 
 
 .. toctree::
-   want01
+   want001
    
