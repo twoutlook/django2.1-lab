@@ -37,3 +37,10 @@ Prepare envrionment to study Django::
     You are using pip version 10.0.1, however version 18.1 is available.
     You should consider upgrading via the 'pip install --upgrade pip' command.
     (venv) $ 
+    
+    
+ 
+.. figure:: _static/want002-01.png
+    :align: center
+.. figure:: _static/want002-02.png
+    :align: center
