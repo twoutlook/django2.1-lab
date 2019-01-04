@@ -3,6 +3,13 @@ Customize startapp
 ==================
 
 
+.. figure:: _static/want001-01.png
+    :align: center
+.. figure:: _static/want001-02.png
+    :align: center
+
+
+
 What's standard startapp doing?
 ==================
 
