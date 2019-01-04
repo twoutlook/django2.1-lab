@@ -1,7 +1,14 @@
 ==================
-Customize startapp
+My desired startapp
 ==================
 
+python manage.py startapp
+
+根據個人的開發經驗，urls.py, templates/{{app_name}}/base.html, 總是會用到的，為什麼不預設就有呢？
+
+從文檔和代碼看目前做法
+
+模版
 
 .. figure:: _static/want001-01.png
     :align: center
